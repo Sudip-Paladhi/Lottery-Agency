@@ -7,67 +7,120 @@
     <title>Lottery Agency</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="media-queries.css" />
+    <script
+      src="https://kit.fontawesome.com/yourcode.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
 
   <body>
     <!-- nav bar -->
     <nav>
-      <div class="container main-nav flex">
-        <a href="#" class="company-logo"
-          ><img
-          src=https://www.clipartmax.com/png/middle/155-1558366_michigan-lottery-michigan-state-lottery-logo.png
-          alt="company-logo"></a
-        >
-
-        <div class="nav-links">
-          <ul class="flex">
-            <li><a href="#" class="hover-link secondary-button">Home</a></li>
-            <li>
-              <a href="#" class="hover-link secondary-button">Today Result</a>
-            </li>
-            <li>
-              <a href="#" class="hover-link primary-button">Old result</a>
-            </li>
-          </ul>
-        </div>
-        <a href="#" class="hover-link nav-toggle"
-          ><i class="fa-solid fa-bars"></i
-        ></a>
-      </div>
+      <input type="checkbox" id="check" />
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <label class="logo">Lottery</label>
+      <ul>
+        <li><a class="active" href="#">Home</a></li>
+        <li><a href="#">Today result</a></li>
+        <li><a href="#">Old result</a></li>
+      </ul>
     </nav>
 
     <!-- header section -->
     <header>
-      <div class="container header-section flex">
-        <div class="header-left">
-          <h1>Play Anytime Anewhere</h1>
-          <p>Don't miss your chance, will you be our next lucky Winner.</p>
+      <div id="slider">
+        <input type="radio" name="slider" id="slide1" checked />
+        <input type="radio" name="slider" id="slide2" />
+        <input type="radio" name="slider" id="slide3" />
+        <input type="radio" name="slider" id="slide4" />
+        <div id="slides">
+          <div id="overflow">
+            <div class="inner">
+              <div class="slide slide_1">
+                <div class="slide-content">
+                  <img
+                    src="https://img.freepik.com/premium-vector/casino-fortune-wheel-illustration_269504-7.jpg?w=740"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="slide slide_2">
+                <div class="slide-content">
+                  <img
+                    src="https://img.freepik.com/premium-vector/casino-fortune-wheel-illustration_269504-7.jpg?w=740"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="slide slide_3">
+                <div class="slide-content">
+                  <img
+                    src="https://img.freepik.com/premium-vector/casino-fortune-wheel-illustration_269504-7.jpg?w=740"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="slide slide_4">
+                <div class="slide-content">
+                  <img
+                    src="https://img.freepik.com/premium-vector/casino-fortune-wheel-illustration_269504-7.jpg?w=740"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="header-right">
-          <img src="assets/asset 2.png" alt="Hero image" />
+        <div id="controls">
+          <label for="slide1"></label>
+          <label for="slide2"></label>
+          <label for="slide3"></label>
+          <label for="slide4"></label>
+        </div>
+        <div id="bullets">
+          <label for="slide1"></label>
+          <label for="slide2"></label>
+          <label for="slide3"></label>
+          <label for="slide4"></label>
         </div>
       </div>
     </header>
 
     <!-- exemples-section -->
 
-    <section class="exemples-section">
-      <div class="container">
-        <div class="examples-area flex">
-          <a href="#" class="examples-card">
-            <h3 class="card-text">Result</h3>
-          </a>
-
-          <a href="#" class="examples-card">
-            <h3 class="card-text">Result</h3>
-          </a>
-
-          <a href="#" class="examples-card">
-            <h3 class="card-text">Result</h3>
-          </a>
+    <div class="container">
+      <div class="heading">
+        <h1>TODAY RESULT</h1>
+      </div>
+      <div class="row">
+        <div class="card">
+          <div class="card-header">
+            <h1>AFTERNOON 1:00 PM</h1>
+          </div>
+          <div class="card-body">
+            <a href="#" class="btn">Result</a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <h1>EVENING 5:00 PM</h1>
+          </div>
+          <div class="card-body">
+            <a href="#" class="btn">Result</a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <h1>NIGHT 8:00 PM</h1>
+          </div>
+          <div class="card-body">
+            <a href="#" class="btn">Result</a>
+          </div>
         </div>
       </div>
-    </section>
+    </div>
 
     <!-- footer section -->
 
